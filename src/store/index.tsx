@@ -1,16 +1,16 @@
 /*使用单个reducer的写法start*/
-// import { createStore } from 'redux'
-// import reducer from './reducers'
-//
-//
-// const store = createStore(reducer)
-//
-// export default store
+import { createStore } from 'redux'
+import reducer from './reducers'
+
+
+const store = createStore(reducer)
+
+export default store
 /*使用单个reducer的写法start*/
 
 
 /*使用多个reducer的写法start*/
-import { createStore } from 'redux'
+/*import { createStore } from 'redux'
 
 import countReducer from "./reducers";
 import testReducer from "./TestReducer";
@@ -22,5 +22,5 @@ const reducer = combineReducers({
 })
 
 const store = createStore(reducer)
-export default store
+export default store*/
 /*使用多个reducer的写法end*/
